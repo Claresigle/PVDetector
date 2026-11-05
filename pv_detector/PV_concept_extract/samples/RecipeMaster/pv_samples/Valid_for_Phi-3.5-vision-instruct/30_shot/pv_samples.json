@@ -1,0 +1,122 @@
+[
+    {
+        "msg": "Determine the quickest way to get from point A to point B using public transportation.\nData:\nPoint A: Paris, France\nPoint B: Nice, France",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_38.jpg"
+    },
+    {
+        "msg": "Generate a algorithm to sort a given list of three colors.\nData:\ncolors = ['white', 'red', 'blue']",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_69.jpg"
+    },
+    {
+        "msg": "Compose an email to the customer complaining about a product.\nData:\nCustomer name: John Smith\nProduct name: TV\nProblem: Display is flickering",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_80.jpg"
+    },
+    {
+        "msg": "Brainstorm three ideas for a new website that would provide valuable new services to people.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_4.jpg"
+    },
+    {
+        "msg": "Explain the cause and effect relationship in the sentence.\nData:\nThe increasing popularity of mobile banking has decreased the need for physical banking.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_20.jpg"
+    },
+    {
+        "msg": "Given a list of numbers in random order, arrange them in ascending order.\nData:\n5, 2, 4, 1, 8",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_18.jpg"
+    },
+    {
+        "msg": "Given a list of elements, find the two elements which sum up to the given number.\nData:\nGiven a list [2, 3, 4, 8] and a sum of 6,",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_72.jpg"
+    },
+    {
+        "msg": "Come up with a fictional movie title.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_61.jpg"
+    },
+    {
+        "msg": "Which website platform is best for a small business?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_8.jpg"
+    },
+    {
+        "msg": "What is the average number of days a person spends in the hospital after heart surgery?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_47.jpg"
+    },
+    {
+        "msg": "Reorganize this paragraph to make it more effective.\nData:\nJohn went to the store and bought some apples. He then drove home and noticed the apples were too small. After that he decided to take them back.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_52.jpg"
+    },
+    {
+        "msg": "Discuss how the following excerpt is an example of satire.\nData:\nExcerpt: I realized that most of our people were too busy ever so concerned with their social media accounts to ever think about volunteering or doing anything of use.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_34.jpg"
+    },
+    {
+        "msg": "Select the best definition for a machine learning algorithm.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_81.jpg"
+    },
+    {
+        "msg": "Name three famous figures who were contemporaries of Galileo Galilei.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_37.jpg"
+    },
+    {
+        "msg": "Which US state motto is \"Live free or die\"?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_40.jpg"
+    },
+    {
+        "msg": "Find the sum of the following two fractions.\nData:\n3/4 + 2/3",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_46.jpg"
+    },
+    {
+        "msg": "Write a phrase used to describe someone who is innovative.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_29.jpg"
+    },
+    {
+        "msg": "Determine the quickest way to get from point A to point B using public transportation.\nData:\nPoint A: Paris, France\nPoint B: Nice, France",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_38.jpg"
+    },
+    {
+        "msg": "Name a common side effect of antibiotics.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_25.jpg"
+    },
+    {
+        "msg": "Group the items by category.\nData:\nApple, Car, Dog, House",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_94.jpg"
+    },
+    {
+        "msg": "Simplify the given equation to solve for the unknown x.\nData:\n2x – 3 = 4",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_59.jpg"
+    },
+    {
+        "msg": "Name 5 US cities with populations over 1 million.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_14.jpg"
+    },
+    {
+        "msg": "Generate 5 questions relevant to the following topic.\nData:\nMen's fashion",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_44.jpg"
+    },
+    {
+        "msg": "Discuss how the following excerpt is an example of satire.\nData:\nExcerpt: I realized that most of our people were too busy ever so concerned with their social media accounts to ever think about volunteering or doing anything of use.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_34.jpg"
+    },
+    {
+        "msg": "Calculate the tax rate on a purchase of 100 USD.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_56.jpg"
+    },
+    {
+        "msg": "Compose a Tweet-length description about the benefits of learning a foreign language.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_92.jpg"
+    },
+    {
+        "msg": "Design a 3D model for this structure.\nData:\nA modern house with two floors and a front yard",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_86.jpg"
+    },
+    {
+        "msg": "Design an outfit with the color green.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_57.jpg"
+    },
+    {
+        "msg": "Name three famous figures who were contemporaries of Galileo Galilei.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_37.jpg"
+    },
+    {
+        "msg": "Construct a dialogue where you ask a friend to loan you a book and your friend responds negatively.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_70.jpg"
+    }
+]

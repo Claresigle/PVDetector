@@ -1,0 +1,102 @@
+{
+    "Meta-Llama-3.1-8B-Instruct": {
+        "Normal": {
+            "data_path": "./datasets/TripPlanner/In_domain_data/Accepted_by_Meta-Llama-3.1-8B-Instruct/Questions_accepted_489it.json",
+            "sample_num": -1
+        },
+        "Alpaca": {
+            "Alpaca-Ignore_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/Alpaca/Ignore_attack/Meta-Llama-3.1-8B-Instruct/alpaca_300it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-Fake_Complete_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/Alpaca/Fake_Complete_attack/Meta-Llama-3.1-8B-Instruct/alpaca_300it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-Combine_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/Alpaca/Combine_attack/Meta-Llama-3.1-8B-Instruct/alpaca_300it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-GCG_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/Alpaca/GCG_attack/Meta-Llama-3.1-8B-Instruct/alpaca_100it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-Ignore_GCG_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/Alpaca/Ignore_GCG_attack/Meta-Llama-3.1-8B-Instruct/alpaca_100it_attack_data.json",
+                "sample_num": -1
+            }
+        },
+        "MMLU": {
+            "MMLU-Ignore_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/MMLU/Ignore_attack/Meta-Llama-3.1-8B-Instruct/mmlu_300it_attack_data.json",
+                "sample_num": -1
+            },
+            "MMLU-Fake_Complete_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/MMLU/Fake_Complete_attack/Meta-Llama-3.1-8B-Instruct/mmlu_300it_attack_data.json",
+                "sample_num": -1
+            },
+            "MMLU-Combine_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/MMLU/Combine_attack/Meta-Llama-3.1-8B-Instruct/mmlu_300it_attack_data.json",
+                "sample_num": -1
+            },
+            "MMLU-GCG_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/MMLU/GCG_attack/Meta-Llama-3.1-8B-Instruct/mmlu_100it_attack_data.json",
+                "sample_num": -1
+            },
+            "MMLU-Ignore_GCG_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/MMLU/Ignore_GCG_attack/Meta-Llama-3.1-8B-Instruct/mmlu_100it_attack_data.json",
+                "sample_num": -1
+            }
+        }
+    },
+    "Qwen2.5-7B-Instruct": {
+        "Normal": {
+            "data_path": "./datasets/TripPlanner/In_domain_data/Accepted_by_Qwen2.5-7B-Instruct/Questions_accepted_378it.json",
+            "sample_num": -1
+        },
+        "Alpaca": {
+            "Alpaca-Ignore_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/Alpaca/Ignore_attack/Qwen2.5-7B-Instruct/alpaca_300it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-Fake_Complete_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/Alpaca/Fake_Complete_attack/Qwen2.5-7B-Instruct/alpaca_300it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-Combine_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/Alpaca/Combine_attack/Qwen2.5-7B-Instruct/alpaca_300it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-GCG_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/Alpaca/GCG_attack/Qwen2.5-7B-Instruct/alpaca_100it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-Ignore_GCG_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/Alpaca/Ignore_GCG_attack/Qwen2.5-7B-Instruct/alpaca_100it_attack_data.json",
+                "sample_num": -1
+            }
+        },
+        "MMLU": {
+            "MMLU-Ignore_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/MMLU/Ignore_attack/Qwen2.5-7B-Instruct/mmlu_300it_attack_data.json",
+                "sample_num": -1
+            },
+            "MMLU-Fake_Complete_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/MMLU/Fake_Complete_attack/Qwen2.5-7B-Instruct/mmlu_300it_attack_data.json",
+                "sample_num": -1
+            },
+            "MMLU-Combine_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/MMLU/Combine_attack/Qwen2.5-7B-Instruct/mmlu_300it_attack_data.json",
+                "sample_num": -1
+            },
+            "MMLU-GCG_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/MMLU/GCG_attack/Qwen2.5-7B-Instruct/mmlu_100it_attack_data.json",
+                "sample_num": -1
+            },
+            "MMLU-Ignore_GCG_attack": {
+                "data_path": "./datasets/Attack_Data/TripPlanner/MMLU/Ignore_GCG_attack/Qwen2.5-7B-Instruct/mmlu_100it_attack_data.json",
+                "sample_num": -1
+            }
+        }
+    }
+}

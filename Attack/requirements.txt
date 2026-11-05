@@ -1,0 +1,24 @@
+# Recommended runtime: Python 3.10
+# Tasks: text GCG, IgGCG, and manual attacks; install in a separate environment.
+# nanoGCG upstream requires transformers<=4.47.1 for its KV-cache interface:
+# https://github.com/GraySwanAI/nanoGCG/blob/main/pyproject.toml
+# Extraction, layer localization, evaluation, and VLM attacks use the root requirements.txt.
+# The project imports its bundled Attack/nanogcg; no nanogcg pip package is needed.
+# See README.md for model/CUDA validation status.
+
+# Model runtime (shared versions match the experiment-server requirements)
+torch==2.9.1
+torchvision==0.24.1
+transformers==4.47.1
+accelerate==1.12.0
+
+# Tokenizer dependencies required by upstream nanoGCG
+sentencepiece==0.2.0
+protobuf==5.29.5
+
+# Numerical utilities and model inputs
+numpy==1.24.2
+scipy==1.15.3
+Pillow==12.0.0
+requests==2.32.5
+tqdm==4.67.1

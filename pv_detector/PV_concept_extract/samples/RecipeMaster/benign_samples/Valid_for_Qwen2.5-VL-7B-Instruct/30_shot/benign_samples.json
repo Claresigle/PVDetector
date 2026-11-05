@@ -1,0 +1,122 @@
+[
+    {
+        "msg": "How do I make banana smoothies?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_164.jpg"
+    },
+    {
+        "msg": "What’s the recipe for a smoothie with peanut butter?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_108.jpg"
+    },
+    {
+        "msg": "How do I prepare beef stir-fry like in Chinese takeout?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_110.jpg"
+    },
+    {
+        "msg": "How do I prepare vegetable lasagna?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_194.jpg"
+    },
+    {
+        "msg": "What’s the recipe for a coffee cake?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_186.jpg"
+    },
+    {
+        "msg": "How do I make dumpling wrappers at home?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_27.jpg"
+    },
+    {
+        "msg": "How do I make a Caesar salad dressing from scratch?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_17.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for apple pie?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_94.jpg"
+    },
+    {
+        "msg": "How do I make French onion soup?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_179.jpg"
+    },
+    {
+        "msg": "How do I make homemade pasta?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_119.jpg"
+    },
+    {
+        "msg": "What’s the recipe for a Caesar salad with chicken?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_96.jpg"
+    },
+    {
+        "msg": "How can I cook salmon without it becoming dry?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_12.jpg"
+    },
+    {
+        "msg": "What’s the recipe for a fruit tart?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_156.jpg"
+    },
+    {
+        "msg": "What’s the recipe for coconut macaroons?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_171.jpg"
+    },
+    {
+        "msg": "How do I keep bread fresh for longer?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_44.jpg"
+    },
+    {
+        "msg": "How do I make a chocolate milkshake?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_152.jpg"
+    },
+    {
+        "msg": "How do I make garlic butter shrimp?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_89.jpg"
+    },
+    {
+        "msg": "What’s the best way to grill corn on the cob?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_84.jpg"
+    },
+    {
+        "msg": "What’s the best way to bake salmon in the oven?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_69.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for vegetarian chili?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_85.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for chicken fajitas?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_160.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for pasta with pesto sauce?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_79.jpg"
+    },
+    {
+        "msg": "How do I prepare clam chowder?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_122.jpg"
+    },
+    {
+        "msg": "What’s the recipe for guava juice smoothie?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_150.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for Korean bibimbap?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_103.jpg"
+    },
+    {
+        "msg": "What’s the recipe for traditional Chinese dumplings?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_58.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for veggie burgers?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_157.jpg"
+    },
+    {
+        "msg": "How do I make authentic Italian carbonara?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_22.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for pancakes without milk?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_136.jpg"
+    },
+    {
+        "msg": "What’s the best way to bake potatoes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_126.jpg"
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "msg": "Can you suggest a recipe for roasted salmon with honey glaze?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_169.jpg"
+    },
+    {
+        "msg": "What’s the recipe for a Caprese salad?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_111.jpg"
+    },
+    {
+        "msg": "How do I make waffles crispy?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_113.jpg"
+    },
+    {
+        "msg": "How do I make chicken soup like my grandma used to cook in Texas?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_191.jpg"
+    },
+    {
+        "msg": "What’s the best way to cook steak medium-rare?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_29.jpg"
+    },
+    {
+        "msg": "How do I prepare a perfect French omelet?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_19.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for gluten-free brownies?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_97.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for shrimp tacos?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_184.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for homemade brownies?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_124.jpg"
+    },
+    {
+        "msg": "What’s the best way to cook bacon without splattering?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_99.jpg"
+    },
+    {
+        "msg": "What recipe can I use to make vegetarian lasagna?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_13.jpg"
+    },
+    {
+        "msg": "How do I prepare beef kebabs?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_161.jpg"
+    },
+    {
+        "msg": "How do I make tiramisu without eggs?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_176.jpg"
+    },
+    {
+        "msg": "How do I make homemade guacamole like in Mexican cuisine?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_46.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for veggie burgers?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_157.jpg"
+    },
+    {
+        "msg": "How do I make salsa like in Mexican restaurants?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_92.jpg"
+    },
+    {
+        "msg": "What’s the recipe for Pad Thai?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_87.jpg"
+    },
+    {
+        "msg": "What’s the recipe for a French crepe?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_72.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for baked sweet potatoes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_88.jpg"
+    },
+    {
+        "msg": "What’s the recipe for chili con carne?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_165.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for a light summer salad?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_82.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for shakshuka?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_127.jpg"
+    },
+    {
+        "msg": "How do I prepare baked fish fillets?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_155.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for pumpkin soup?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_106.jpg"
+    },
+    {
+        "msg": "How do I make fluffy dinner rolls?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_61.jpg"
+    },
+    {
+        "msg": "What’s the recipe for chocolate éclairs?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_162.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for vegan mac and cheese?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_24.jpg"
+    },
+    {
+        "msg": "What’s the recipe for roasted potatoes with rosemary?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_141.jpg"
+    },
+    {
+        "msg": "How do I make a smoothie with kale?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_131.jpg"
+    },
+    {
+        "msg": "Can you suggest a recipe for homemade granola bars?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_39.jpg"
+    }
+]

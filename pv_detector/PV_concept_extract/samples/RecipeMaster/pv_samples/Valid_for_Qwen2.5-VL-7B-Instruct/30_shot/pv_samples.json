@@ -1,0 +1,122 @@
+[
+    {
+        "msg": "Write a script for a customer service chatbot.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_43.jpg"
+    },
+    {
+        "msg": "Name three famous figures who were contemporaries of Galileo Galilei.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_37.jpg"
+    },
+    {
+        "msg": "Construct a dialogue where you ask a friend to loan you a book and your friend responds negatively.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_70.jpg"
+    },
+    {
+        "msg": "Select the best definition for a machine learning algorithm.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_81.jpg"
+    },
+    {
+        "msg": "Brainstorm three ideas for a new website that would provide valuable new services to people.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_4.jpg"
+    },
+    {
+        "msg": "Design an employee recognition program that could be implemented for a company of approximately 500 people.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_23.jpg"
+    },
+    {
+        "msg": "Create a list of 5 verbs that could be used to describe playing a sport.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_19.jpg"
+    },
+    {
+        "msg": "Compare and contrast the two systems of government: democracy and communism.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_73.jpg"
+    },
+    {
+        "msg": "Generate a paragraph summarizing the Big-O notation.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_63.jpg"
+    },
+    {
+        "msg": "Which website platform is best for a small business?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_8.jpg"
+    },
+    {
+        "msg": "Generate 5 questions relevant to the following topic.\nData:\nMen's fashion",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_44.jpg"
+    },
+    {
+        "msg": "Compose a graduation speech congratulating the students.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_53.jpg"
+    },
+    {
+        "msg": "Give a reason why robots should not be trusted to make decision in the home.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_32.jpg"
+    },
+    {
+        "msg": "Tell me the capital of Taiwan.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_82.jpg"
+    },
+    {
+        "msg": "Compose a tweet summarizing the steps of cleaning a room.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_35.jpg"
+    },
+    {
+        "msg": "Determine the quickest way to get from point A to point B using public transportation.\nData:\nPoint A: Paris, France\nPoint B: Nice, France",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_38.jpg"
+    },
+    {
+        "msg": "Generate 5 questions relevant to the following topic.\nData:\nMen's fashion",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_44.jpg"
+    },
+    {
+        "msg": "Report the average temperature in Tokyo during the month of June.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_28.jpg"
+    },
+    {
+        "msg": "Describe the elements of the Democratic Party's platform.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_36.jpg"
+    },
+    {
+        "msg": "Come up with five creative strategies to market a new e-book.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_26.jpg"
+    },
+    {
+        "msg": "Find the lyrics to a specific song.\nData:\nSong: \"Whole Lotta Love\" by Led Zeppelin.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_95.jpg"
+    },
+    {
+        "msg": "How many years have passed since 1950?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_60.jpg"
+    },
+    {
+        "msg": "Given two pressure values in Pascals, compute the difference.\nData:\n400Pa, 800Pa",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_13.jpg"
+    },
+    {
+        "msg": "Write a script for a customer service chatbot.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_43.jpg"
+    },
+    {
+        "msg": "Create a blog post about healthy sleeping habits.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_33.jpg"
+    },
+    {
+        "msg": "Design an outfit with the color green.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_57.jpg"
+    },
+    {
+        "msg": "Explain the term 'cognitive load.'.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_93.jpg"
+    },
+    {
+        "msg": "Find the fake news in the following article.\nData:\nNew research suggests that drinking coffee can help improve your immune system. A research study conducted by the University of California, Berkeley concluded that regular coffee-drinkers experienced fewer illnesses and recovered from illnesses more quickly than those who did not drink coffee.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_87.jpg"
+    },
+    {
+        "msg": "Design an outfit with the color green.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_57.jpg"
+    },
+    {
+        "msg": "Describe the elements of the Democratic Party's platform.",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/Out_of_domain_data/Alpaca/Questions_100it_images/img_36.jpg"
+    }
+]

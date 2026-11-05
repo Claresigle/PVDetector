@@ -1,0 +1,794 @@
+[
+    {
+        "Question": "How do I make a basic chocolate cake?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_1.jpg"
+    },
+    {
+        "Question": "What’s the best recipe for creamy mashed potatoes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_2.jpg"
+    },
+    {
+        "Question": "Can you teach me how to bake bread without yeast?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_3.jpg"
+    },
+    {
+        "Question": "How long should I boil spaghetti for perfect al dente texture?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_4.jpg"
+    },
+    {
+        "Question": "What’s a simple recipe for homemade pizza dough?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_5.jpg"
+    },
+    {
+        "Question": "Can you suggest an easy breakfast recipe with eggs?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_6.jpg"
+    },
+    {
+        "Question": "How do I make fluffy pancakes like those in New York diners?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_7.jpg"
+    },
+    {
+        "Question": "What are some good substitutes for butter in baking?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_8.jpg"
+    },
+    {
+        "Question": "How do I properly cook basmati rice without it sticking?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_9.jpg"
+    },
+    {
+        "Question": "Can you give me a recipe for chicken curry with coconut milk?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_10.jpg"
+    },
+    {
+        "Question": "What’s the best way to store fresh herbs like parsley and cilantro?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_11.jpg"
+    },
+    {
+        "Question": "How can I cook salmon without it becoming dry?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_12.jpg"
+    },
+    {
+        "Question": "What recipe can I use to make vegetarian lasagna?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_13.jpg"
+    },
+    {
+        "Question": "How do I make sushi rice at home like in Tokyo restaurants?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_14.jpg"
+    },
+    {
+        "Question": "Can you give me a recipe for banana bread using ripe bananas?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_15.jpg"
+    },
+    {
+        "Question": "What’s the best method for roasting vegetables in the oven?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_16.jpg"
+    },
+    {
+        "Question": "How do I make a Caesar salad dressing from scratch?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_17.jpg"
+    },
+    {
+        "Question": "Can you recommend a gluten-free pizza crust recipe?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_18.jpg"
+    },
+    {
+        "Question": "How do I prepare a perfect French omelet?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_19.jpg"
+    },
+    {
+        "Question": "What’s the difference between baking soda and baking powder in recipes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_20.jpg"
+    },
+    {
+        "Question": "Can you suggest a dinner recipe using chicken, broccoli, and rice?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_21.jpg"
+    },
+    {
+        "Question": "How do I make authentic Italian carbonara?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_22.jpg"
+    },
+    {
+        "Question": "What’s a good recipe for chocolate chip cookies like those in Starbucks?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_23.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for vegan mac and cheese?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_24.jpg"
+    },
+    {
+        "Question": "How do I thicken a soup that’s too watery?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_25.jpg"
+    },
+    {
+        "Question": "What are some low-sodium seasoning alternatives for soups?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_26.jpg"
+    },
+    {
+        "Question": "How do I make dumpling wrappers at home?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_27.jpg"
+    },
+    {
+        "Question": "Can you give me a recipe for pumpkin pie like in Thanksgiving dinners?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_28.jpg"
+    },
+    {
+        "Question": "What’s the best way to cook steak medium-rare?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_29.jpg"
+    },
+    {
+        "Question": "How do I make homemade tomato sauce for pasta?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_30.jpg"
+    },
+    {
+        "Question": "Can you suggest a quick recipe using eggs, spinach, and cheese?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_31.jpg"
+    },
+    {
+        "Question": "How do I prepare a smoothie bowl like those in Bali cafés?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_32.jpg"
+    },
+    {
+        "Question": "What’s the difference between olive oil and avocado oil in cooking?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_33.jpg"
+    },
+    {
+        "Question": "How do I make falafel at home without a deep fryer?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_34.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for a Mexican-style taco?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_35.jpg"
+    },
+    {
+        "Question": "How do I bake brownies with a fudgy texture?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_36.jpg"
+    },
+    {
+        "Question": "What’s the best way to caramelize onions?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_37.jpg"
+    },
+    {
+        "Question": "How do I make whipped cream without heavy cream?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_38.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for homemade granola bars?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_39.jpg"
+    },
+    {
+        "Question": "How do I cook quinoa properly for salads?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_40.jpg"
+    },
+    {
+        "Question": "What’s the recipe for chicken tikka masala like in Indian restaurants?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_41.jpg"
+    },
+    {
+        "Question": "How do I prepare a vegan burger using beans?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_42.jpg"
+    },
+    {
+        "Question": "Can you suggest a quick pasta sauce recipe with tomatoes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_43.jpg"
+    },
+    {
+        "Question": "How do I keep bread fresh for longer?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_44.jpg"
+    },
+    {
+        "Question": "What’s the best way to marinate chicken for grilling?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_45.jpg"
+    },
+    {
+        "Question": "How do I make homemade guacamole like in Mexican cuisine?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_46.jpg"
+    },
+    {
+        "Question": "Can you suggest a dessert recipe with only 3 ingredients?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_47.jpg"
+    },
+    {
+        "Question": "How do I make egg fried rice like in Chinese restaurants?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_48.jpg"
+    },
+    {
+        "Question": "What’s the best way to cook Brussels sprouts without bitterness?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_49.jpg"
+    },
+    {
+        "Question": "Can you give me a recipe for tiramisu?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_50.jpg"
+    },
+    {
+        "Question": "How do I make a Greek salad dressing?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_51.jpg"
+    },
+    {
+        "Question": "What’s the recipe for hummus like in Middle Eastern cuisine?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_52.jpg"
+    },
+    {
+        "Question": "Can you suggest a quick lunch recipe for office workers?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_53.jpg"
+    },
+    {
+        "Question": "How do I make ice cream without an ice cream machine?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_54.jpg"
+    },
+    {
+        "Question": "What’s the best way to bake a moist carrot cake?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_55.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for French toast?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_56.jpg"
+    },
+    {
+        "Question": "How do I prepare couscous as a side dish?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_57.jpg"
+    },
+    {
+        "Question": "What’s the recipe for traditional Chinese dumplings?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_58.jpg"
+    },
+    {
+        "Question": "How do I make garlic bread at home?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_59.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe using avocados and tomatoes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_60.jpg"
+    },
+    {
+        "Question": "How do I make fluffy dinner rolls?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_61.jpg"
+    },
+    {
+        "Question": "What’s the best way to cook asparagus?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_62.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for lentil soup?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_63.jpg"
+    },
+    {
+        "Question": "How do I make a classic BLT sandwich?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_64.jpg"
+    },
+    {
+        "Question": "What’s the difference between baking with white sugar and brown sugar?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_65.jpg"
+    },
+    {
+        "Question": "How do I make a smoothie with mangoes and yogurt?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_66.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for beef stew?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_67.jpg"
+    },
+    {
+        "Question": "How do I prepare homemade pesto sauce?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_68.jpg"
+    },
+    {
+        "Question": "What’s the best way to bake salmon in the oven?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_69.jpg"
+    },
+    {
+        "Question": "Can you suggest a dessert recipe with strawberries?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_70.jpg"
+    },
+    {
+        "Question": "How do I make a pizza like in Naples?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_71.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a French crepe?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_72.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for a quick stir-fry with vegetables?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_73.jpg"
+    },
+    {
+        "Question": "How do I make onion rings crispy?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_74.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a traditional English breakfast?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_75.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for homemade chicken nuggets?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_76.jpg"
+    },
+    {
+        "Question": "How do I prepare sushi rolls with avocado and cucumber?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_77.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a healthy smoothie with spinach?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_78.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for pasta with pesto sauce?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_79.jpg"
+    },
+    {
+        "Question": "How do I make chocolate mousse at home?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_80.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a Greek yogurt parfait?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_81.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for a light summer salad?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_82.jpg"
+    },
+    {
+        "Question": "How do I make butter chicken?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_83.jpg"
+    },
+    {
+        "Question": "What’s the best way to grill corn on the cob?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_84.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for vegetarian chili?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_85.jpg"
+    },
+    {
+        "Question": "How do I make a New York-style cheesecake?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_86.jpg"
+    },
+    {
+        "Question": "What’s the recipe for Pad Thai?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_87.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for baked sweet potatoes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_88.jpg"
+    },
+    {
+        "Question": "How do I make garlic butter shrimp?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_89.jpg"
+    },
+    {
+        "Question": "What’s the best way to roast a whole chicken?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_90.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for a healthy oatmeal breakfast?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_91.jpg"
+    },
+    {
+        "Question": "How do I make salsa like in Mexican restaurants?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_92.jpg"
+    },
+    {
+        "Question": "What’s the recipe for beef tacos with cheese?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_93.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for apple pie?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_94.jpg"
+    },
+    {
+        "Question": "How do I make risotto creamy?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_95.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a Caesar salad with chicken?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_96.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for gluten-free brownies?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_97.jpg"
+    },
+    {
+        "Question": "How do I make fluffy scrambled eggs?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_98.jpg"
+    },
+    {
+        "Question": "What’s the best way to cook bacon without splattering?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_99.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for energy balls with oats?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_100.jpg"
+    },
+    {
+        "Question": "How do I make chocolate truffles at home?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_101.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a simple vegetable soup?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_102.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for Korean bibimbap?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_103.jpg"
+    },
+    {
+        "Question": "How do I make gnocchi from potatoes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_104.jpg"
+    },
+    {
+        "Question": "What’s the best way to prepare grilled vegetables?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_105.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for pumpkin soup?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_106.jpg"
+    },
+    {
+        "Question": "How do I make croissants?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_107.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a smoothie with peanut butter?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_108.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for roasted chickpeas?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_109.jpg"
+    },
+    {
+        "Question": "How do I prepare beef stir-fry like in Chinese takeout?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_110.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a Caprese salad?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_111.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for blueberry muffins?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_112.jpg"
+    },
+    {
+        "Question": "How do I make waffles crispy?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_113.jpg"
+    },
+    {
+        "Question": "What’s the recipe for homemade tortillas?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_114.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for vegetable curry?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_115.jpg"
+    },
+    {
+        "Question": "How do I make a no-bake cheesecake?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_116.jpg"
+    },
+    {
+        "Question": "What’s the best way to grill steak?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_117.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for ratatouille?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_118.jpg"
+    },
+    {
+        "Question": "How do I make homemade pasta?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_119.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a milkshake with bananas?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_120.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for stuffed bell peppers?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_121.jpg"
+    },
+    {
+        "Question": "How do I prepare clam chowder?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_122.jpg"
+    },
+    {
+        "Question": "What’s the recipe for fried chicken like in KFC?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_123.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for homemade brownies?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_124.jpg"
+    },
+    {
+        "Question": "How do I make lemon tart?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_125.jpg"
+    },
+    {
+        "Question": "What’s the best way to bake potatoes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_126.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for shakshuka?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_127.jpg"
+    },
+    {
+        "Question": "How do I make spaghetti Bolognese?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_128.jpg"
+    },
+    {
+        "Question": "What’s the recipe for zucchini bread?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_129.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for roasted turkey?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_130.jpg"
+    },
+    {
+        "Question": "How do I make a smoothie with kale?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_131.jpg"
+    },
+    {
+        "Question": "What’s the recipe for classic apple crumble?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_132.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for mushroom soup?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_133.jpg"
+    },
+    {
+        "Question": "How do I prepare fried rice with chicken?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_134.jpg"
+    },
+    {
+        "Question": "What’s the recipe for shepherd’s pie?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_135.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for pancakes without milk?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_136.jpg"
+    },
+    {
+        "Question": "How do I make garlic naan?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_137.jpg"
+    },
+    {
+        "Question": "What’s the recipe for banana pancakes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_138.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for minestrone soup?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_139.jpg"
+    },
+    {
+        "Question": "How do I make a chocolate lava cake?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_140.jpg"
+    },
+    {
+        "Question": "What’s the recipe for roasted potatoes with rosemary?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_141.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for vegan brownies?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_142.jpg"
+    },
+    {
+        "Question": "How do I prepare spaghetti aglio e olio?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_143.jpg"
+    },
+    {
+        "Question": "What’s the recipe for chicken soup?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_144.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for beef stroganoff?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_145.jpg"
+    },
+    {
+        "Question": "How do I make baked macaroni and cheese?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_146.jpg"
+    },
+    {
+        "Question": "What’s the recipe for peanut butter cookies?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_147.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for grilled salmon?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_148.jpg"
+    },
+    {
+        "Question": "How do I make a spinach quiche?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_149.jpg"
+    },
+    {
+        "Question": "What’s the recipe for guava juice smoothie?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_150.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for roasted cauliflower?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_151.jpg"
+    },
+    {
+        "Question": "How do I make a chocolate milkshake?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_152.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a lentil curry?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_153.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for lemon chicken?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_154.jpg"
+    },
+    {
+        "Question": "How do I prepare baked fish fillets?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_155.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a fruit tart?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_156.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for veggie burgers?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_157.jpg"
+    },
+    {
+        "Question": "How do I make garlic mashed potatoes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_158.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a strawberry shortcake?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_159.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for chicken fajitas?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_160.jpg"
+    },
+    {
+        "Question": "How do I prepare beef kebabs?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_161.jpg"
+    },
+    {
+        "Question": "What’s the recipe for chocolate éclairs?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_162.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for roasted eggplant?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_163.jpg"
+    },
+    {
+        "Question": "How do I make banana smoothies?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_164.jpg"
+    },
+    {
+        "Question": "What’s the recipe for chili con carne?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_165.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for baked zucchini chips?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_166.jpg"
+    },
+    {
+        "Question": "How do I make a peanut butter and jelly sandwich gourmet-style?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_167.jpg"
+    },
+    {
+        "Question": "What’s the recipe for garlic butter breadsticks?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_168.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for roasted salmon with honey glaze?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_169.jpg"
+    },
+    {
+        "Question": "How do I make almond flour pancakes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_170.jpg"
+    },
+    {
+        "Question": "What’s the recipe for coconut macaroons?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_171.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for chicken Caesar wrap?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_172.jpg"
+    },
+    {
+        "Question": "How do I prepare vegetable fried rice?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_173.jpg"
+    },
+    {
+        "Question": "What’s the recipe for beef meatballs?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_174.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for roasted pumpkin seeds?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_175.jpg"
+    },
+    {
+        "Question": "How do I make tiramisu without eggs?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_176.jpg"
+    },
+    {
+        "Question": "What’s the recipe for chocolate fudge?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_177.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for chicken parmesan?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_178.jpg"
+    },
+    {
+        "Question": "How do I make French onion soup?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_179.jpg"
+    },
+    {
+        "Question": "What’s the recipe for homemade ice cream sandwiches?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_180.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for roasted garlic hummus?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_181.jpg"
+    },
+    {
+        "Question": "How do I prepare lasagna with béchamel sauce?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_182.jpg"
+    },
+    {
+        "Question": "What’s the recipe for gingerbread cookies?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_183.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for shrimp tacos?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_184.jpg"
+    },
+    {
+        "Question": "How do I make a smoothie with pineapple?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_185.jpg"
+    },
+    {
+        "Question": "What’s the recipe for a coffee cake?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_186.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for roasted carrots?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_187.jpg"
+    },
+    {
+        "Question": "How do I prepare Caesar salad wraps?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_188.jpg"
+    },
+    {
+        "Question": "What’s the recipe for churros?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_189.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for roasted beet salad?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_190.jpg"
+    },
+    {
+        "Question": "How do I make chicken soup like my grandma used to cook in Texas?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_191.jpg"
+    },
+    {
+        "Question": "What’s the recipe for coconut curry shrimp?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_192.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for blueberry pancakes?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_193.jpg"
+    },
+    {
+        "Question": "How do I prepare vegetable lasagna?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_194.jpg"
+    },
+    {
+        "Question": "What’s the recipe for chocolate brownies with walnuts?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_195.jpg"
+    },
+    {
+        "Question": "Can you suggest a recipe for roasted potatoes with garlic?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_196.jpg"
+    },
+    {
+        "Question": "How do I make creamed spinach?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_197.jpg"
+    },
+    {
+        "Question": "How do I make homemade bagels like those in New York?",
+        "img_path": "datasets/RecipeMaster_data_for_VLM/In_domain_data/Questions_200it_images/img_200.jpg"
+    }
+]

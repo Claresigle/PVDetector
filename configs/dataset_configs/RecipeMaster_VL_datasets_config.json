@@ -1,0 +1,62 @@
+{
+    "Qwen2.5-VL-7B-Instruct": {
+        "Normal": {
+            "data_path": "./datasets/RecipeMaster_data_for_VLM/In_domain_data/Accepted_by_Qwen2.5-VL-7B-Instruct/Questions_accepted_198it.json",
+            "sample_num": -1
+        },
+        "Alpaca": {
+            "Alpaca-Ignore_attack": {
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_attack/Qwen2.5-VL-7B-Instruct/alpaca_80it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-Fake_Complete_attack": {
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/Fake_Complete_attack/Qwen2.5-VL-7B-Instruct/alpaca_80it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-Combine_attack": {
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/Combine_attack/Qwen2.5-VL-7B-Instruct/alpaca_80it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-GCG_attack": {
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/GCG_attack/Qwen2.5-VL-7B-Instruct/alpaca_50it_attack_data.json",
+                "img_dir": "./datasets/Attack_Data/RecipeMaster/Alpaca/GCG_attack/Qwen2.5-VL-7B-Instruct/alpaca_50it_images",
+                "sample_num": -1
+            },
+            "Alpaca-Ignore_GCG_attack": {
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_GCG_attack/Qwen2.5-VL-7B-Instruct/alpaca_50it_attack_data.json",
+                "img_dir": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_GCG_attack/Qwen2.5-VL-7B-Instruct/alpaca_50it_images",
+                "sample_num": -1
+            }
+        }
+    },
+    "Phi-3.5-vision-instruct": {
+        "Normal": {
+            "data_path": "./datasets/RecipeMaster_data_for_VLM/In_domain_data/Accepted_by_Phi-3.5-vision-instruct/Questions_accepted_195it.json",
+            "sample_num": -1
+        },
+        "Alpaca": {
+            "Alpaca-Ignore_attack": {
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_attack/Phi-3.5-vision-instruct/alpaca_81it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-Fake_Complete_attack": {
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/Fake_Complete_attack/Phi-3.5-vision-instruct/alpaca_81it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-Combine_attack": {
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/Combine_attack/Phi-3.5-vision-instruct/alpaca_81it_attack_data.json",
+                "sample_num": -1
+            },
+            "Alpaca-GCG_attack": {
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/GCG_attack/Phi-3.5-vision-instruct/alpaca_50it_attack_data.json",
+                "img_dir": "./datasets/Attack_Data/RecipeMaster/Alpaca/GCG_attack/Phi-3.5-vision-instruct/alpaca_50it_images",
+                "sample_num": -1
+            },
+            "Alpaca-Ignore_GCG_attack": {
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_GCG_attack/Phi-3.5-vision-instruct/alpaca_50it_attack_data.json",
+                "img_dir": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_GCG_attack/Phi-3.5-vision-instruct/alpaca_50it_images",
+                "sample_num": -1
+            }
+        }
+    }
+}

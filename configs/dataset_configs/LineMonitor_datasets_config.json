@@ -1,0 +1,30 @@
+{
+    "Meta-Llama-3.1-8B-Instruct": {
+        "Normal": {
+            "data_path": "./datasets/LineMonitor/Benign_queries_data/Accepted_by_Meta-Llama-3.1-8B-Instruct/Questions_accepted_300it.json",
+            "sample_num": -1
+        },
+        "Unauthorized_Action": {
+            "Unauthorized_Action-Ignore_attack": {
+                "data_path": "./datasets/Attack_Data/LineMonitor/Unauthorized_Action/Ignore_attack/Meta-Llama-3.1-8B-Instruct/pv_100it_attack_data.json",
+                "sample_num": -1
+            },
+            "Unauthorized_Action-Fake_Complete_attack": {
+                "data_path": "./datasets/Attack_Data/LineMonitor/Unauthorized_Action/Fake_Complete_attack/Meta-Llama-3.1-8B-Instruct/pv_100it_attack_data.json",
+                "sample_num": -1
+            },
+            "Unauthorized_Action-Combine_attack": {
+                "data_path": "./datasets/Attack_Data/LineMonitor/Unauthorized_Action/Combine_attack/Meta-Llama-3.1-8B-Instruct/pv_100it_attack_data.json",
+                "sample_num": -1
+            },
+            "Unauthorized_Action-GCG_attack": {
+                "data_path": "./datasets/Attack_Data/LineMonitor/Unauthorized_Action/GCG_attack/Meta-Llama-3.1-8B-Instruct/pv_50it_attack_data.json",
+                "sample_num": -1
+            },
+            "Unauthorized_Action-Ignore_GCG_attack": {
+                "data_path": "./datasets/Attack_Data/LineMonitor/Unauthorized_Action/Ignore_GCG_attack/Meta-Llama-3.1-8B-Instruct/pv_50it_attack_data.json",
+                "sample_num": -1
+            }
+        }
+    }
+}

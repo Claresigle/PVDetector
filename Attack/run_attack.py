@@ -58,7 +58,6 @@ ATTACK_ROUTES = {
         parser_kwargs={
             "default_role": "RecipeMaster",
             "default_dataset": "Alpaca",
-            "default_sample_num": 50,
         },
         handler=execute_vl_gcg,
         handler_kwargs={

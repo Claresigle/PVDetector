@@ -38,6 +38,27 @@ VL_KEY_LAYERS = {
 }
 
 
+# Legacy presets apply only to the original 30-shot settings and built-in key layers.
+TEXT_THRESHOLDS = {
+    "RecipeMaster": {
+        "Meta-Llama-3.1-8B-Instruct": -24.4833,
+        "Qwen2.5-7B-Instruct": -175.9573,
+        "Qwen2.5-14B-Instruct": -1375.1312,
+    },
+    "TripPlanner": {
+        "Meta-Llama-3.1-8B-Instruct": -26.8506,
+        "Qwen2.5-7B-Instruct": -176.1809,
+    },
+}
+
+VL_THRESHOLDS = {
+    "RecipeMaster": {
+        "Qwen2.5-VL-7B-Instruct": -451.9219,
+        "Phi-3.5-vision-instruct": -1632.4010,
+    },
+}
+
+
 @dataclass(frozen=True)
 class ExperimentContext:
     model_name: str
@@ -63,6 +84,33 @@ def get_key_layers(model_name, multimodal=False):
         return list(layer_table[model_name])
     except KeyError as exc:
         raise ValueError(f"No saved key layers for model={model_name}") from exc
+
+
+def get_threshold(role, model_name, multimodal=False):
+    threshold_table = VL_THRESHOLDS if multimodal else TEXT_THRESHOLDS
+    try:
+        return threshold_table[role][model_name]
+    except KeyError as exc:
+        raise ValueError(
+            f"No saved threshold for role={role}, model={model_name}; "
+            "set --estimate_threshold True."
+        ) from exc
+
+
+def validate_threshold_settings(args, multimodal=False):
+    if args.estimate_threshold:
+        return
+    if getattr(args, "locate_key_layers", False):
+        raise ValueError("Dynamic key-layer localization requires --estimate_threshold True.")
+    model_name = get_model_key(args.model)
+    if (args.fpr_target != 0.01 or args.pv_source_sample_num != 30
+            or args.pv_concept_source_role != args.role_name
+            or get_model_key(args.pv_concept_source_model) != model_name):
+        raise ValueError(
+            "Saved presets require target FPR=0.01 and same-model, same-role 30-shot PV vectors; "
+            "set --estimate_threshold True for other settings."
+        )
+    get_threshold(args.role_name, model_name, multimodal=multimodal)
 
 
 def format_key_layers(key_layers):
@@ -168,6 +216,7 @@ def resolve_key_layers(args, resources, multimodal=False):
 
 
 def prepare_experiment(args, multimodal=False):
+    validate_threshold_settings(args, multimodal=multimodal)
     set_seed(args.seed)
     resources = load_experiment_resources(args)
     key_layers = resolve_key_layers(args, resources, multimodal=multimodal)
@@ -220,16 +269,19 @@ def run_custom_text_evaluation(args, context, detector, system_prompts):
     datasets.update(load_datasets_samples(normal_config))
     datasets = combine_normal_data(datasets)
 
-    # Recalibrate for the current vectors and key layers on every evaluation run.
-    logging.info("Estimating threshold from normal samples at target FPR=%.2f%%", args.fpr_target * 100)
-    detector.threshold = detector.estimate_threshold_from_normal(
-        datasets["Normal"],
-        system_prompt=system_prompts[role],
-        key_layers=key_layers,
-        projection_type="proj",
-        fpr_target=args.fpr_target,
-        n_samples=100,
-    )
+    if args.estimate_threshold:
+        logging.info("Estimating threshold from normal samples at target FPR=%.2f%%", args.fpr_target * 100)
+        detector.threshold = detector.estimate_threshold_from_normal(
+            datasets["Normal"],
+            system_prompt=system_prompts[role],
+            key_layers=key_layers,
+            projection_type="proj",
+            fpr_target=args.fpr_target,
+            n_samples=100,
+        )
+    else:
+        detector.threshold = get_threshold(role, context.model_name)
+        logging.info(f"Using saved threshold: {detector.threshold}")
 
     return evaluate_flat_datasets(detector, datasets, system_prompts[role], key_layers)
 
@@ -278,16 +330,19 @@ def run_vl_experiment(args):
     datasets.update(load_VL_datasets_samples(normal_config))
     datasets = combine_normal_data(datasets)
 
-    # VL uses the same per-run calibration policy as text evaluation.
-    logging.info("Estimating threshold from normal samples at target FPR=%.2f%%", args.fpr_target * 100)
-    detector.threshold = detector.estimate_threshold_from_normal(
-        datasets["Normal"],
-        system_prompt=system_prompts[role],
-        key_layers=key_layers,
-        projection_type="proj",
-        fpr_target=args.fpr_target,
-        n_samples=100,
-    )
+    if args.estimate_threshold:
+        logging.info("Estimating threshold from normal samples at target FPR=%.2f%%", args.fpr_target * 100)
+        detector.threshold = detector.estimate_threshold_from_normal(
+            datasets["Normal"],
+            system_prompt=system_prompts[role],
+            key_layers=key_layers,
+            projection_type="proj",
+            fpr_target=args.fpr_target,
+            n_samples=100,
+        )
+    else:
+        detector.threshold = get_threshold(role, context.model_name, multimodal=True)
+        logging.info(f"Using saved threshold: {detector.threshold}")
 
     results = evaluate_flat_datasets(detector, datasets, system_prompts[role], key_layers)
     torch.cuda.empty_cache()

@@ -43,6 +43,10 @@ def parse_args():
     parser.add_argument("--output_dir", type=str, default="./result/evaluate_result/")
     parser.add_argument("--experiment_name", type=str, default=None)
     parser.add_argument(
+        "--estimate_threshold", type=str_to_bool, default=True,
+        help="Calibrate from benign samples; False uses a saved preset (default: %(default)s).",
+    )
+    parser.add_argument(
         "--fpr_target",
         type=float,
         default=0.01,

@@ -154,3 +154,18 @@ def build_dataset_paths_VL(args, role, model_name, attack_type="GCG"):
         f"{output_prefix}_{args.sample_num}it_attack_data.json",
     )
     return data_path, save_dir, save_path_no_deny, save_path
+
+
+def resolve_vl_sample_num(args, role, model_name):
+    """Resolve an omitted VL count before constructing log and output paths."""
+    if args.sample_num is not None and args.sample_num != -1:
+        return args.sample_num
+    data_path, _, _, _ = build_dataset_paths_VL(args, role, model_name)
+    if data_path is None:
+        raise FileNotFoundError(
+            f"No rejected VL dataset found for role={role}, model={model_name}."
+        )
+    sample_num = len(load_json_file(data_path))
+    if sample_num == 0:
+        raise ValueError(f"Rejected VL samples must not be empty: {data_path}")
+    return sample_num

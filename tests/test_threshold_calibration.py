@@ -23,14 +23,19 @@ class ThresholdCalibrationTests(unittest.TestCase):
             with self.subTest(entry=entry.__name__):
                 args = self.parse_args(entry)
                 self.assertEqual(args.fpr_target, 0.01)
-                self.assertFalse(hasattr(args, "estimate_threshold"))
+                self.assertTrue(args.estimate_threshold)
                 self.assertFalse(hasattr(args, "fpr_targets"))
                 self.assertEqual(self.parse_args(entry, ["--fpr_target", "0.02"]).fpr_target, 0.02)
 
-    def test_old_switch_and_multiple_targets_are_rejected(self):
+    def test_estimation_switch_accepts_explicit_boolean_values(self):
         for entry in (text_entry, vl_entry):
-            for arguments in (["--estimate_threshold", "False"],
-                              ["--fpr_targets", "0.01", "0.02"],
+            for value, expected in (("True", True), ("False", False), ("1", True), ("0", False)):
+                with self.subTest(entry=entry.__name__, value=value):
+                    self.assertIs(self.parse_args(entry, ["--estimate_threshold", value]).estimate_threshold, expected)
+
+    def test_multiple_targets_are_rejected(self):
+        for entry in (text_entry, vl_entry):
+            for arguments in (["--fpr_targets", "0.01", "0.02"],
                               ["--fpr_target", "0.01", "0.02"]):
                 with self.subTest(entry=entry.__name__, arguments=arguments):
                     with contextlib.redirect_stderr(io.StringIO()):
@@ -46,14 +51,17 @@ class ThresholdCalibrationTests(unittest.TestCase):
         self.assertAlmostEqual(threshold, 98.01)
         self.assertEqual(detector.compute_pv_strength.call_count, 100)
 
-    def exercise_pipeline(self, modality, target=None, dynamic=False, repetitions=1):
+    def exercise_pipeline(self, modality, target=None, dynamic=False, repetitions=1, estimate=True):
         entry = text_entry if modality == "text" else vl_entry
         arguments = ["--fpr_target", str(target)] if target is not None else []
+        if not estimate:
+            arguments.extend(["--estimate_threshold", "False"])
         if dynamic:
             arguments.extend(["--locate_key_layers", "True", "--locate_strategy", "pos_neg_cos"])
         args = self.parse_args(entry, arguments)
-        args.pv_concept_source_role = "TripPlanner"
-        args.pv_source_sample_num = 12
+        if estimate:
+            args.pv_concept_source_role = "TripPlanner"
+            args.pv_source_sample_num = 12
         model_name = get_model_key(args.model)
         resources = runner.ExperimentResources(
             model_name, object(), object(), {args.role_name: "policy"}, object(),
@@ -86,15 +94,20 @@ class ThresholdCalibrationTests(unittest.TestCase):
              patch.object(locator, "locate_pv_aware_key_layers", return_value=[1, 3]) as locate:
             for index in range(repetitions):
                 normal = {**normal, "msg": f"normal-{index}"}
-                args.pv_source_sample_num = 12 + index
+                if estimate:
+                    args.pv_source_sample_num = 12 + index
                 context = (runner.run_text_experiment if modality == "text" else runner.run_vl_experiment)(args)
-                self.assertEqual(detector.threshold, [0.25, 0.75][index])
-                self.assertEqual(detector.estimate_threshold_from_normal.call_count, index + 1)
-                calibration = detector.estimate_threshold_from_normal.call_args
-                self.assertEqual(calibration.args[0], [normal])
-                self.assertEqual(calibration.kwargs["fpr_target"], args.fpr_target)
-                self.assertEqual(calibration.kwargs["n_samples"], 100)
-                self.assertEqual(calibration.kwargs["key_layers"], context.key_layers)
+                if estimate:
+                    self.assertEqual(detector.threshold, [0.25, 0.75][index])
+                    self.assertEqual(detector.estimate_threshold_from_normal.call_count, index + 1)
+                    calibration = detector.estimate_threshold_from_normal.call_args
+                    self.assertEqual(calibration.args[0], [normal])
+                    self.assertEqual(calibration.kwargs["fpr_target"], args.fpr_target)
+                    self.assertEqual(calibration.kwargs["n_samples"], 100)
+                    self.assertEqual(calibration.kwargs["key_layers"], context.key_layers)
+                else:
+                    self.assertEqual(detector.threshold, {"text": -24.4833, "vl": -451.9219}[modality])
+                    detector.estimate_threshold_from_normal.assert_not_called()
                 self.assertEqual(context.key_layers, [1, 3] if dynamic else runner.get_key_layers(
                     model_name, multimodal=(modality == "vl"),
                 ))
@@ -125,6 +138,31 @@ class ThresholdCalibrationTests(unittest.TestCase):
 
     def test_dynamic_text_layers_use_the_same_single_calibration_flow(self):
         self.exercise_pipeline("text", dynamic=True)
+
+
+    def test_disabled_calibration_uses_saved_thresholds(self):
+        for modality in ("text", "vl"):
+            with self.subTest(modality=modality):
+                self.exercise_pipeline(modality, estimate=False)
+
+    def test_presets_reject_incompatible_settings_before_loading_model(self):
+        for entry in (text_entry, vl_entry):
+            cases = [
+                ["--fpr_target", "0.02"],
+                ["--pv_source_sample_num", "12"],
+                ["--pv_concept_source_role", "TripPlanner"],
+                ["--pv_concept_source_model", "other-model"],
+                ["--role_name", "CareerCounselor", "--pv_concept_source_role", "CareerCounselor"],
+            ]
+            if entry is text_entry:
+                cases.append(["--locate_key_layers", "True"])
+            for arguments in cases:
+                with self.subTest(entry=entry.__name__, arguments=arguments):
+                    args = self.parse_args(entry, ["--estimate_threshold", "False", *arguments])
+                    with patch.object(runner, "load_experiment_resources") as load:
+                        with self.assertRaisesRegex(ValueError, "--estimate_threshold True"):
+                            runner.prepare_experiment(args, multimodal=(entry is vl_entry))
+                    load.assert_not_called()
 
 
 if __name__ == "__main__":

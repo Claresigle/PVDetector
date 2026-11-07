@@ -37,8 +37,6 @@ pip install -r Attack/requirements.txt
 
 The text attack environment uses Transformers 4.47.1 to satisfy [nanoGCG's dependency constraint](https://github.com/GraySwanAI/nanoGCG/blob/main/pyproject.toml). VLM attacks use the project's adapted backends with Transformers 4.57.3. nanoGCG is bundled in `Attack/`; no separate `pip install nanogcg` is needed.
 
-The dependency pins follow the experiment-server package versions, with a separate Transformers pin for text attacks. End-to-end model/CUDA validation of the refactored code, including Phi-3.5 Vision compatibility, is pending.
-
 ## Data Preparation
 
 ### 1. System prompts and PV concept samples
@@ -46,7 +44,7 @@ The dependency pins follow the experiment-server package versions, with a separa
 - **System prompts:** `datasets/Agents_system_prompt/` contains the role definitions and restriction policies for each agent.
 - **Contrastive sample pairs:** each pair contains a benign query and a policy-violating (PV) query for extracting PV concepts. Samples are stored in `pv_detector/PV_concept_extract/samples/<role>/{benign_samples,pv_samples}/Valid_for_<model>/30_shot/`.
 
-The sample files are named `benign_samples.json` and `pv_samples.json`. Text entries are strings; VLM entries contain `msg` and `img_path`, with image paths relative to the repository root. The release provides complete 30-shot sets. Other shot counts require both sample files in matching `<N>_shot` directories.
+The sample files are named `benign_samples.json` and `pv_samples.json`. Text entries are strings; VLM entries contain `msg` and `img_path`, with image paths relative to the repository root.
 
 ### 2. Evaluation data
 
@@ -64,15 +62,15 @@ python -m Attack.run_attack gcg text --help
 
 The `manual` runner implements the heuristic-based attacks described in the paper. Select `Ignore`, `Fake_Complete`, or `Combine` through `--attack_strategy`.
 
-Generate the sample counts named in the evaluation config; specify `--sample_num` when switching roles or datasets:
+Generate the sample counts named in the evaluation config. Text Manual attacks on Alpaca / MMLU require `--sample_num 300`:
 
 | Modality / dataset | Manual | GCG / IgGCG |
 |---|---|---|
 | Text: Alpaca / MMLU | 300 | 100 |
-| Text: Leak_Prompt / Unauthorized_Action | 100 | 50 |
-| VL: Alpaca | 80 (Qwen) / 81 (Phi) | 50 |
+| Text: Leak_Prompt / Unauthorized_Action | 100 | 100 |
+| VL: Alpaca | 80 (Qwen) / 81 (Phi) | 80 (Qwen) / 81 (Phi) |
 
-VL manual attacks default to all available rejected samples, currently 80 for Qwen and 81 for Phi. Examples matching the RecipeMaster evaluation configs:
+Text GCG and IgGCG default to 100 samples. All VL attack methods default to all available rejected samples, currently 80 for Qwen and 81 for Phi. Examples matching the RecipeMaster evaluation configs:
 
 ```bash
 conda activate pvdetector-attack
@@ -87,7 +85,7 @@ python -m Attack.run_attack gcg text \
 conda activate pvdetector
 python -m Attack.run_attack iggcg vl \
   --model Qwen/Qwen2.5-VL-7B-Instruct --role_name RecipeMaster \
-  --dataset Alpaca --sample_num 50 --device cuda:0
+  --dataset Alpaca --sample_num 80 --device cuda:0
 ```
 
 Outputs default to `datasets/Attack_Data/<role>/<dataset>/<attack>_attack/<model>/`. IgGCG uses `Ignore_GCG_attack` as its storage directory name. Evaluation configs reference the all-results JSON files. Prepare these files and extract the corresponding PV vectors before evaluation.
@@ -118,11 +116,12 @@ python Evaluate_experiment.py \
   --role_name RecipeMaster \
   --dataset_name Alpaca \
   --pv_concept_source_model Meta-Llama-3.1-8B-Instruct \
+  --estimate_threshold True \
   --fpr_target 0.01 \
   --device cuda:0
 ```
 
-Each evaluation run calibrates its threshold once from up to 100 benign samples using the current PV vectors and key layers. The default target FPR is 0.01 (1%); `--fpr_target` accepts a single value for text and VLM evaluation. Add `--locate_key_layers True` to select text-model key layers dynamically; otherwise, the evaluator uses the built-in layer settings.
+`--estimate_threshold` defaults to `True`: calibrate once from up to 100 benign samples using the current PV vectors and key layers. The default target FPR is 0.01 (1%); `--fpr_target` accepts a single value for text and VLM evaluation.  Recalibrate after changing vector contents. Add `--locate_key_layers True` to select text-model key layers dynamically with calibration enabled.
 
 ### 3. Evaluate a vision-language model
 
@@ -134,6 +133,7 @@ python Evaluate_experiment_VL.py \
   --role_name RecipeMaster \
   --dataset_name Alpaca \
   --pv_concept_source_model Qwen2.5-VL-7B-Instruct \
+  --estimate_threshold True \
   --fpr_target 0.01 \
   --device cuda:0
 ```

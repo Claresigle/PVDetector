@@ -25,6 +25,7 @@ from .dataset import (
     load_samples_from_dataset,
     load_samples_from_dataset_VL,
     load_system_prompts,
+    resolve_vl_sample_num,
     save_json_file,
 )
 from .model import generate_vl_response, llm_generate, load_model, prepare_vl_model
@@ -113,7 +114,7 @@ def build_text_gcg_config(config_cls, args):
 def build_vl_gcg_parser(
         default_role: str = "RecipeMaster",
         default_dataset: str = "Alpaca",
-        default_sample_num: int = 50):
+        default_sample_num: Optional[int] = None):
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--model",
@@ -126,7 +127,10 @@ def build_vl_gcg_parser(
     parser.add_argument("--tar_data_dir", type=str, default=str(REPO_DIR / "datasets"))
     parser.add_argument("--refusal_prefixes_path", type=str, default=str(ATTACK_DIR / "assets" / "refusal_prefixes.json"))
     parser.add_argument("--dataset", default=default_dataset, type=str)
-    parser.add_argument("--sample_num", type=int, default=default_sample_num)
+    parser.add_argument(
+        "--sample_num", type=int, default=default_sample_num,
+        help="Number of attack samples; defaults to all available rejected samples.",
+    )
     parser.add_argument("--device", type=str, default="cuda:1")
     parser.add_argument("--dtype", type=str, default="float16")
     parser.add_argument("--seed", type=int, default=38)
@@ -231,6 +235,7 @@ def prepare_vl_gcg_context(args, attack_name: str):
     if args.dataset != "Alpaca":
         raise ValueError(f"{args.dataset} is not supported.")
 
+    args.sample_num = resolve_vl_sample_num(args, role, model_name)
     log_path = f"{args.log_dir}/{role}/{model_name}/{args.dataset}_{args.sample_num}/all"
     set_logging(log_path, stdout=False, add_time=False)
     log_path_no_deny = f"{os.path.dirname(log_path)}/no_deny.log"

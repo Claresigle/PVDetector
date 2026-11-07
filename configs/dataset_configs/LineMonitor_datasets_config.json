@@ -18,11 +18,11 @@
                 "sample_num": -1
             },
             "Unauthorized_Action-GCG_attack": {
-                "data_path": "./datasets/Attack_Data/LineMonitor/Unauthorized_Action/GCG_attack/Meta-Llama-3.1-8B-Instruct/pv_50it_attack_data.json",
+                "data_path": "./datasets/Attack_Data/LineMonitor/Unauthorized_Action/GCG_attack/Meta-Llama-3.1-8B-Instruct/pv_100it_attack_data.json",
                 "sample_num": -1
             },
             "Unauthorized_Action-Ignore_GCG_attack": {
-                "data_path": "./datasets/Attack_Data/LineMonitor/Unauthorized_Action/Ignore_GCG_attack/Meta-Llama-3.1-8B-Instruct/pv_50it_attack_data.json",
+                "data_path": "./datasets/Attack_Data/LineMonitor/Unauthorized_Action/Ignore_GCG_attack/Meta-Llama-3.1-8B-Instruct/pv_100it_attack_data.json",
                 "sample_num": -1
             }
         }

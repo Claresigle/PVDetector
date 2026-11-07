@@ -23,6 +23,7 @@ from .dataset import (
     load_samples_from_dataset,
     load_samples_from_dataset_VL,
     load_system_prompts,
+    resolve_vl_sample_num,
     save_json_file,
 )
 from .model import generate_vl_response, llm_generate, load_model
@@ -186,18 +187,7 @@ def prepare_text_manual_attack_context(args):
 
 def prepare_vl_manual_attack_context(args):
     # Resolve the sample count before building log paths and output filenames.
-    if args.sample_num is None or args.sample_num == -1:
-        model_name = get_model_key(args.model)
-        data_path, _, _, _ = build_dataset_paths_VL(
-            args, args.role_name, model_name, attack_type=args.attack_strategy,
-        )
-        if data_path is None:
-            raise FileNotFoundError(
-                f"No rejected VL dataset found for role={args.role_name}, model={model_name}."
-            )
-        args.sample_num = len(load_json_file(data_path))
-        if args.sample_num == 0:
-            raise ValueError(f"Rejected VL samples must not be empty: {data_path}")
+    args.sample_num = resolve_vl_sample_num(args, args.role_name, get_model_key(args.model))
     (
         model_name,
         role,

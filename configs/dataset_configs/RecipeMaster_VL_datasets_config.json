@@ -18,13 +18,13 @@
                 "sample_num": -1
             },
             "Alpaca-GCG_attack": {
-                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/GCG_attack/Qwen2.5-VL-7B-Instruct/alpaca_50it_attack_data.json",
-                "img_dir": "./datasets/Attack_Data/RecipeMaster/Alpaca/GCG_attack/Qwen2.5-VL-7B-Instruct/alpaca_50it_images",
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/GCG_attack/Qwen2.5-VL-7B-Instruct/alpaca_80it_attack_data.json",
+                "img_dir": "./datasets/Attack_Data/RecipeMaster/Alpaca/GCG_attack/Qwen2.5-VL-7B-Instruct/alpaca_80it_images",
                 "sample_num": -1
             },
             "Alpaca-Ignore_GCG_attack": {
-                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_GCG_attack/Qwen2.5-VL-7B-Instruct/alpaca_50it_attack_data.json",
-                "img_dir": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_GCG_attack/Qwen2.5-VL-7B-Instruct/alpaca_50it_images",
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_GCG_attack/Qwen2.5-VL-7B-Instruct/alpaca_80it_attack_data.json",
+                "img_dir": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_GCG_attack/Qwen2.5-VL-7B-Instruct/alpaca_80it_images",
                 "sample_num": -1
             }
         }
@@ -48,13 +48,13 @@
                 "sample_num": -1
             },
             "Alpaca-GCG_attack": {
-                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/GCG_attack/Phi-3.5-vision-instruct/alpaca_50it_attack_data.json",
-                "img_dir": "./datasets/Attack_Data/RecipeMaster/Alpaca/GCG_attack/Phi-3.5-vision-instruct/alpaca_50it_images",
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/GCG_attack/Phi-3.5-vision-instruct/alpaca_81it_attack_data.json",
+                "img_dir": "./datasets/Attack_Data/RecipeMaster/Alpaca/GCG_attack/Phi-3.5-vision-instruct/alpaca_81it_images",
                 "sample_num": -1
             },
             "Alpaca-Ignore_GCG_attack": {
-                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_GCG_attack/Phi-3.5-vision-instruct/alpaca_50it_attack_data.json",
-                "img_dir": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_GCG_attack/Phi-3.5-vision-instruct/alpaca_50it_images",
+                "data_path": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_GCG_attack/Phi-3.5-vision-instruct/alpaca_81it_attack_data.json",
+                "img_dir": "./datasets/Attack_Data/RecipeMaster/Alpaca/Ignore_GCG_attack/Phi-3.5-vision-instruct/alpaca_81it_images",
                 "sample_num": -1
             }
         }

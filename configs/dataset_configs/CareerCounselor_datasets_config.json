@@ -18,11 +18,11 @@
                 "sample_num": -1
             },
             "Leak_Prompt-GCG_attack": {
-                "data_path": "./datasets/Attack_Data/CareerCounselor/Leak_Prompt/GCG_attack/Meta-Llama-3.1-8B-Instruct/pv_50it_attack_data.json",
+                "data_path": "./datasets/Attack_Data/CareerCounselor/Leak_Prompt/GCG_attack/Meta-Llama-3.1-8B-Instruct/pv_100it_attack_data.json",
                 "sample_num": -1
             },
             "Leak_Prompt-Ig_GCG_attack": {
-                "data_path": "./datasets/Attack_Data/CareerCounselor/Leak_Prompt/Ignore_GCG_attack/Meta-Llama-3.1-8B-Instruct/pv_50it_attack_data.json",
+                "data_path": "./datasets/Attack_Data/CareerCounselor/Leak_Prompt/Ignore_GCG_attack/Meta-Llama-3.1-8B-Instruct/pv_100it_attack_data.json",
                 "sample_num": -1
             }
         }

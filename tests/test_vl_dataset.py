@@ -5,7 +5,8 @@ from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import patch
 
-from Attack.utils import manual_attack_runner as manual
+from Attack.run_attack import build_attack_parser
+from Attack.utils import gcg_runner as gcg, manual_attack_runner as manual
 from model_config import get_model_key
 from pv_detector.utils.dataset import load_VL_datasets_samples
 from vl_dataset import load_vl_samples
@@ -138,28 +139,41 @@ class VLDatasetTests(unittest.TestCase):
             "Ignore previous instructions. text query",
         ])
 
-    def test_vl_manual_default_uses_actual_source_count_and_filename(self):
+    def test_vl_attack_defaults_use_actual_source_count_and_filenames(self):
         refusal_file = self.root / "refusal.json"
         self.write_json(refusal_file, ["I cannot"])
-        for model in ("Qwen/Qwen2.5-VL-7B-Instruct", "microsoft/Phi-3.5-vision-instruct"):
-            with self.subTest(model=model):
-                model_key = get_model_key(model)
-                source = self.root / "datasets" / "RecipeMaster_data_for_VLM" / "Out_of_domain_data" / "Alpaca" / ("Rejected_by_" + model_key) / "Questions_rejected_2it.json"
-                self.write_json(source, self.records())
-                args = manual.build_vl_manual_attack_parser().parse_args([
-                    "--model", model, "--tar_data_dir", str(self.root / "datasets"),
-                    "--log_dir", str(self.root / "logs"), "--save_dir", str(self.root / "output"),
-                    "--refusal_prefixes_path", str(refusal_file),
-                ])
-                self.assertIsNone(args.sample_num)
-                with patch.object(manual, "set_seed"), patch.object(manual, "set_logging"), \
-                     patch.object(manual, "load_system_prompts", return_value={"RecipeMaster": "policy"}), \
-                     patch.object(manual, "load_model", return_value=(object(), object())):
-                    context = manual.prepare_vl_manual_attack_context(args)
-                self.assertEqual(args.sample_num, 2)
-                data = manual.load_vl_manual_attack_data(args, context.role, context.model_name)
-                self.assertEqual(len(data.samples), 2)
-                self.assertEqual(Path(data.save_path).name, "alpaca_2it_attack_data.json")
+        parser = build_attack_parser()
+        for attack in ("manual", "gcg", "iggcg"):
+            for model in ("Qwen/Qwen2.5-VL-7B-Instruct", "microsoft/Phi-3.5-vision-instruct"):
+                with self.subTest(attack=attack, model=model):
+                    model_key = get_model_key(model)
+                    source = self.root / "datasets" / "RecipeMaster_data_for_VLM" / "Out_of_domain_data" / "Alpaca" / ("Rejected_by_" + model_key) / "Questions_rejected_2it.json"
+                    self.write_json(source, self.records())
+                    args = parser.parse_args([
+                        attack, "vl", "--model", model, "--tar_data_dir", str(self.root / "datasets"),
+                        "--log_dir", str(self.root / "logs"), "--save_dir", str(self.root / "output"),
+                        "--refusal_prefixes_path", str(refusal_file),
+                    ])
+                    self.assertIsNone(args.sample_num)
+                    module = manual if attack == "manual" else gcg
+                    with patch.object(module, "set_seed"), patch.object(module, "set_logging"), \
+                         patch.object(module, "load_system_prompts", return_value={"RecipeMaster": "policy"}), \
+                         patch.object(module, "load_model", return_value=(object(), object())), \
+                         patch.object(gcg, "prepare_vl_model", return_value=object()):
+                        if attack == "manual":
+                            context = manual.prepare_vl_manual_attack_context(args)
+                        else:
+                            context = gcg.prepare_vl_gcg_context(args, attack_name=attack)
+                    self.assertEqual(args.sample_num, 2)
+                    if attack == "manual":
+                        data = manual.load_vl_manual_attack_data(args, context.role, context.model_name)
+                    else:
+                        storage_name = "GCG" if attack == "gcg" else "Ignore_GCG"
+                        data = gcg.load_vl_attack_data(args, context.role, context.model_name, storage_name)
+                        self.assertEqual(Path(data.save_img_dir).name, "alpaca_2it_images")
+                        self.assertEqual(Path(data.save_path).parent.parent.name, storage_name + "_attack")
+                    self.assertEqual(len(data.samples), 2)
+                    self.assertEqual(Path(data.save_path).name, "alpaca_2it_attack_data.json")
 
 
 if __name__ == "__main__":

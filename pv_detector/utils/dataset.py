@@ -7,7 +7,7 @@ from pathlib import Path
 
 import numpy as np
 
-from vl_dataset import load_vl_samples
+from common.vl_dataset import load_vl_samples
 
 
 def load_json_file(file_path: str):

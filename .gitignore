@@ -26,6 +26,7 @@ outputs/
 !pv_detector/PV_concept_extract/pv_vectors/Meta-Llama-3.1-8B-Instruct/RecipeMaster/30_shot/layers_pv_vector_mean.pt
 
 # Local machine files
+/tests/
 .vscode/
 tmp/
 .DS_Store
